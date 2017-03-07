@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Playing Audio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.audio {
+			margin-left: 5px;
+			position: relative;
+			top: 4px;
+		}
+		h3 {
+			font-weight: bold;
+			display: inline;
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+<body>
+	
+	<audio id="myAudio">
+		<source src="Audio/Jo.mp3">
+		Your browser does not support the audio element.
+	</audio>
+	<h3>IGBINADOLOR</h3>
+	<span class="audio fa fa-volume-up" style="font-size:30px" onclick="PlayAud()"></span>
+
+	<!--  <button onclick="myFunct"></button>
+	<p id="demo"></p> -->
+
+
+
+
+<script>
+
+	var audio = document.getElementById('myAudio');
+
+	function PlayAud() {
+		audio.play();
+	}
+
+	/* Indicates if controls are present */
+
+	// function myFunct() {
+	// 	var x = document.getElementById('myAudio').controls
+	// 	document.getElementById('demo').innerHTML = x;
+	// }
+</script>	
+</body>
+</html>
